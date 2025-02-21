@@ -48,8 +48,8 @@ Closed question answering data will be organized in {train,valid,test}_cvqa.json
 ```
 {
     "encounter_id": "ENC0001",
-    "{QID1}": "{QID1-VALUE}",
-    "{QID2}": "{QID2-VALUE}",
+    "{QID1}": "{QID1-OPTION-INDEX}",
+    "{QID2}": "{QID2-OPTION-INDEX}",
     ...
 }
 ```
