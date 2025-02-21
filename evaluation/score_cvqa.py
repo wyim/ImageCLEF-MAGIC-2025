@@ -1,8 +1,6 @@
 import sys
 import json
 
-import pandas as pd
-
 QIDS = [
     "CQID010-001", # how much of body is affected
     "CQID011-001", # where is the affected area
