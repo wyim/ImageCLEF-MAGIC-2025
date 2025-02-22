@@ -108,7 +108,7 @@ def addmajoritvote_mask( imageid2fns_bylabeler, annotators, imageids ) :
         imageid2fns_bylabeler['majorityvote'][imageid] = mask
 
 
-def main( masks_reference_dir, masks_prediction_dir, sys_suffix) :#
+def main( masks_reference_dir, masks_prediction_dir, sys_suffix) :
     imageid2fn_refs = {}
     imageids_gold = set()
     read_maskfns( masks_reference_dir, imageid2fn_refs, imageids_gold )
