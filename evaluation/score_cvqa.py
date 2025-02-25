@@ -1,7 +1,7 @@
 import sys
 import json
 
-QIDS = [
+[
     "CQID010-001", # how much of body is affected
     "CQID011-001", # where is the affected area
     "CQID011-002", # where is the affected area
@@ -17,6 +17,14 @@ QIDS = [
     "CQID012-006", # how large are the affected areas
     "CQID015-001", # when did the patient first notice the issue
     "CQID020-001", # what label best describes the affected area
+    'CQID020-002', # what label best describes the affected area
+    'CQID020-003', # what label best describes the affected area
+    'CQID020-004', # what label best describes the affected area
+    'CQID020-005', # what label best describes the affected area
+    'CQID020-006', # what label best describes the affected area
+    'CQID020-007', # what label best describes the affected area
+    'CQID020-008', # what label best describes the affected area
+    'CQID020-009', # what label best describes the affected area
     "CQID025-001", # is there any associated itching with the skin problem
     "CQID034-001", # what is the color of the skin lesion
     "CQID035-001", # how many skin lesions are there
