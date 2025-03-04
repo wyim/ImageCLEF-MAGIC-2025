@@ -117,9 +117,14 @@ def main( masks_reference_dir, masks_prediction_dir, sys_suffix) :
     imageids_system = set()
     read_maskfns( masks_prediction_dir, imageid2fn_predictions, imageids_system )
 
-    print('Detected {} images with masks for reference.'.format(len(imageids_gold)))
-    print('Detected {} images with masks for predictions.'.format(len(imageids_system)))
+    print('Detected {} images with masks for reference.'.format(len(imageids_gold)),file=sys.stderr)
+    print('Detected {} images with masks for predictions.'.format(len(imageids_system)),file=sys.stderr)
     
+    print('Detected gold labelers: {}'.format(imageid2fn_refs.keys()),file=sys.stderr)
+    print('Detected system labelers: {}'.format(imageid2fn_predictions.keys()),file=sys.stderr)
+
+    print(str(imageid2fn_refs))
+          
     #calculate the score 
     data_jacc, data_dice = calculate_perinstance_agreement( imageid2fn_refs, ['ann0','ann1','ann2','ann3'], imageid2fn_predictions[sys_suffix], imageids_gold )
     results = score_masks_macro( data_jacc, data_dice )
