@@ -31,7 +31,7 @@ QIDS = [
     "CQID036-001", # what is the skin lesion texture
 ]
 
-QIDS_PARENTS = list(set([ x.split('-')[0] for x in QIDS ]))
+QIDS_PARENTS = sorted(list(set([ x.split('-')[0] for x in QIDS ])))
 
 
 def calculate_accuracy( qid2val_byencounterid_gold, qid2val_byencounterid_sys, qidparents=QIDS_PARENTS) :
