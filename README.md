@@ -1,6 +1,6 @@
-# IMAGECLEF MAGIC 2025
+# IMAGECLEF MEDIQA MAGIC 2025
 
-This repository includes the evaluation code used for the ImageCLEF Multimodal And Generative TelemedICine (MAGIC) 2025 (https://www.imageclef.org/2025/medical/mediqa), ongoing from February 10 to May 09.
+This repository includes the evaluation code used for the ImageCLEF - MEDIQA Multimodal And Generative TelemedICine (MAGIC) 2025 (https://www.imageclef.org/2025/medical/mediqa), ongoing from February 10 to May 09.
 
 To register please visit the ImageCLEF website and follow instructions on signing up to the evaluation lab:
 https://www.imageclef.org/2025
