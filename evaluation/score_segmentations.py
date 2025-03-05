@@ -123,7 +123,16 @@ def main( masks_reference_dir, masks_prediction_dir, sys_suffix) :
     print('Detected gold labelers: {}'.format(imageid2fn_refs.keys()),file=sys.stderr)
     print('Detected system labelers: {}'.format(imageid2fn_predictions.keys()),file=sys.stderr)
 
-    print(str(imageid2fn_refs))
+    if len(imageids_system) == 0 :
+        return {
+            "jaccard_meanofmax": 0.0,
+            "jaccard_meanofmean": 0.0,
+            "dice_meanofmax": 0.0,
+            "dice_meanofmean": 0.0,
+            "jaccard": 0.0,
+            "dice": 0.0,
+            "number_segmentation_instances": 0
+        }
           
     #calculate the score 
     data_jacc, data_dice = calculate_perinstance_agreement( imageid2fn_refs, ['ann0','ann1','ann2','ann3'], imageid2fn_predictions[sys_suffix], imageids_gold )

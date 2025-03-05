@@ -84,6 +84,21 @@ def main( reference_fn, prediction_fn ) :
     print('Detected {} instances for reference.'.format(len(data_ref)),file=sys.stderr)
     print('Detected {} instances for predictions.'.format(len(data_sys)),file=sys.stderr)
 
+    if len(data_sys)==0:
+        return {
+            "accuracy_CQID010": 0.0,
+            "accuracy_CQID011": 0.0,
+            "accuracy_CQID012": 0.0,
+            "accuracy_CQID015": 0.0,
+            "accuracy_CQID020": 0.0,
+            "accuracy_CQID025": 0.0,
+            "accuracy_CQID034": 0.0,
+            "accuracy_CQID035": 0.0,
+            "accuracy_CQID036": 0.0,
+            "accuracy_all": 0.0,
+            "number_cvqa_instances": 0
+        }
+
     encounterids_ref =  set([ x['encounter_id'] for x in data_ref ])
     encounterids_sys = set([ x['encounter_id'] for x in data_sys ])
     print( 'ENCOUNTERID-MATCH: {}'.format( encounterids_ref == encounterids_sys ),file=sys.stderr)
