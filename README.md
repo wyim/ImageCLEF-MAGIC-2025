@@ -95,8 +95,10 @@ Original Images: https://osf.io/p8bfu
 | Split | Query File |
 | ------ | --------------------|
 | Train | https://osf.io/jgbtm |
-| Valid | https://osf.io/h573a |
-| Test | https://osf.io/9v83a |
+| Valid | https://osf.io/krj8g |
+| Test | https://osf.io/y82bn |
+
+Note the links to these valid and test files are updated from the original 2024 challenge files to account for corrections in some translations. The original valid and test files used in the challenges are as follows: https://osf.io/h573a and https://osf.io/83crj
 
 The dataset was part of a Shared Task:
 ```
