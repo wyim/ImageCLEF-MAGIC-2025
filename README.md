@@ -11,7 +11,7 @@ In the 2nd MEDIQA-MAGIC task, we will extend on the previous year’s dataset an
 
 In the first sub-task, given each image and the clinical history, participants will need to generate segmentations of the regions of interest for the described dermatological problem. In the second sub-task, participants will be given a dermatological query, its accompanying images, as well as a closed-question with accompanying choices – the task is to select the correct answer to each question.
 
-The dataset is created by using real consumer health users’ queries and images; the question schema was created by two certified dermatologists. Segmentation will be evaluated against common metrics such as Jaccard or Dice. Closed question-answering will be evaluated using metrics accuracy.
+The dataset is created by using real consumer health users’ queries and images; the question schema was created in collaboration with two certified dermatologists. Segmentation will be evaluated against common metrics such as Jaccard or Dice. Closed question-answering will be evaluated using accuracy.
 
 ## Data
 
@@ -181,7 +181,7 @@ For the closed QA portion, please use the "score_cvqa.py"; where you can pass in
 python score_cvqa.py <reference-jsonfile> <system-jsonfile> <score-output-directory>
 ```
 
-The evaluation script for the shared task will just use the "run_segandcvqa_scoring.py" which calls the previous to scripts.
+The evaluation script for the shared task will just use the "run_segandcvqa_scoring.py" which calls the previous two scripts.
 
 ## Organizers
 
